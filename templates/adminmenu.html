@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block title %}Админ Меню{% endblock %}
+{% block content %}
+<h3>Добро пожаловать {{ admin_name }}</h3>
+<table>
+    <tr><th>Айди</th><th>Фото</th><th>Логин пользователя</th></tr>
+    {% for element in users %}
+        <tr><td>{{ element["rowid"] }}</td><td>{{ element["photo"] }}</td><td>{{ element["login"] }}</td><td><form method="POST" action="/ban/{{ element["rowid"] }}"><button type="submit">БАН</button></form></td></tr>
+        {% endfor %}
+</table>
+{% endblock %}

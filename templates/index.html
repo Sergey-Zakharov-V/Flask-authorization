@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/photo/icon.ico">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="header">
+    <div class="header-items-left">
+        <span><a class="head-name">Санкт-Петербург Live</a></span>
+    </div>
+    <div class="header-items">
+        {% if session["admin"] == 1 %}
+            <span><a href="{{ url_for("admin_menu") }}"><button type="button" class="btn btn-danger" title="Админ меню"><i class="bi bi-person-gear"></i></button></a></span>
+        {% endif %}
+        <span><a href="{{ url_for("index") }}"><button  type="button" class="btn btn-info" title="Домой"><i class="bi bi-house-fill"></i></button></a></span>
+        <span><a href="#"><button type="button" class="btn btn-info" title="Загрузить контент"><i class="bi bi-upload"></i></button></a></span>
+        <span><a href="{{ url_for("login") }}"><button type="button" class="btn btn-info" title="Вход"><i class="bi bi-arrow-bar-right"></i></button></a></span>
+    </div>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+</html>

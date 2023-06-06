@@ -1,0 +1,107 @@
+body{
+    background-image: url("../photo/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.flash_error{
+    color: red;
+    font-size: 14px;
+}
+.login-div{
+    width: 350px;
+    height: 310px;
+    padding: 20px 20px;
+
+    border: 1px black solid;
+    border-radius: 1vh;
+    color: white;
+    margin: 15% auto;
+    text-align: center;
+    background-color: rgba(2,0,15,0.71);
+    font-family: 'Tilt Warp', cursive;
+}
+.login-form label{
+    width: 50px;
+    height: 25px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.login-form input{
+    width: 200px;
+    height: 20px;
+    border-radius: 1vh;
+    font-size: 12px;
+    border: 1px black solid;
+}
+.login-form button{
+    margin-top: 10px;
+}
+.header{
+    width: auto;
+    height: 70px;
+    position: relative;
+    background-color: rgba(2,0,15,0.71);
+}
+.header-items{
+    display: inline-list-item;
+    padding: 15px;
+    text-align: right;
+}
+.header-items span{
+    padding-right: 10px;
+}
+.header-items-left{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.head-name{
+    text-decoration: none;
+    border-bottom: 3px white solid;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: white ;
+}
+@media(max-width: 1500px) {
+    .login-div{
+        height: 290px;
+    }
+    .header{
+        height: 50px;
+    }
+    .login-form label{
+        font-size: 25px;
+        margin-left: -20px;
+    }
+    .login-form button{
+        font-size: 20px;
+    }
+    .login-form input{
+        width: 200px;
+    }
+    .login-form h1{
+        font-size: 35px;
+    }
+    .header-items{
+        padding: 5px;
+    }
+    .header-items button{
+        margin-left: -10px;
+    }
+    .header-items-left{
+        margin-left: 10px;
+    }
+    .head-name{
+        font-size: 23px;
+        }
+}
+@media(min-width: 3084px) {
+    .login-div{
+        width: 450px;
+        height: 300px;
+        padding: 20px;
+    }
+}

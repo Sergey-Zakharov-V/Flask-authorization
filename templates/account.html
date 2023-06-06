@@ -1,0 +1,8 @@
+{% extends "index.html" %}
+{% block title %}Аккаунт {{ user_login }} {% endblock %}
+{% block content %}
+<form method="post" action="/exit">
+    <h1>{{ user_login }}</h1>
+    <button type="submit">Выход</button>
+</form>
+{% endblock %}
