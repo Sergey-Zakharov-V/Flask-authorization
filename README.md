@@ -5,6 +5,4 @@ Based on the concept of sessions in Flask, I learned how to create and manage us
 
 Furthermore, I learned methods to check user authentication in various parts of the application. I implemented mechanisms to protect routes and controllers, restricting access to specific functions and pages only for authenticated users.
 
-While working with authentication in Flask, I also delved into error handling, form validation, and the implementation of "Forgot Password" functionality with password reset emails.
-
 Overall, implementing authentication in Flask has provided me with valuable experience in web development and security. I have gained practical skills in creating authentication systems, working with databases, and securing web application routes.
